@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+
+    box-sizing:border-box;
+}
+body{
+    font-family: "Poppins",sans-serif;
+    margin:0;
+    background: #ece9e6;
+    background: -webkit-linear-gradient(to right,
+    #6b6666,
+    #a86019);
+    background:linear-gradient(
+        to right,
+        #d8bebe,
+        #ece9e6
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+.mobile-container{
+    background-color: white;
+    width: 400px;
+    box-shadow: 10px 10px 5px 5px #3714881a;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 400px;
+}
+img{
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header input{
+    background-color: #eee;
+    border: none;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 0.5rem, 1rem;
+}
+header button{
+    background-color: transparent;
+    border:none;
+    color:#aaa;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+.fav-container{
+        padding:  0.25rem 1rem;
+    text-align: center;
+    background-color: rgb(190, 119, 190);
+    
+}
+.fav-meals{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow: auto;
+}
+.fav-meals li{
+width: 85px;
+margin: 5px;
+}
+.fav-meals li img{
+    object-fit: cover;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px 2px #c2a4a41a;
+    border: 2px solid #9b2d2d;
+}
+.fav-meals li span{
+    font-size: 0.9rem;
+}
+
+.meal{
+  border-radius: 3px;
+  box-shadow: 0 0 10px 2px #ad13131a;
+  margin: 1.5rem;
+}
+.meal-header{
+    position: relative;
+
+}
+.meal-header .random{
+    position: absolute;
+    top: 1rem;
+    background-color: #fff;
+    padding:0.25rem 1rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.meal-header img{
+    height: 250px;
+    width:100% ;
+    object-fit: cover;
+}
+.meal-body{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 1rem;
+
+}
+.meal-body h4{
+    margin:0;
+}
+.meal-body .fav-btn{
+    border:none;
+    background-color: transparent;
+    color:rgb(197, 188, 188);
+    font-size: 1.2rem;
+    cursor:pointer;
+    
+}
+/*heart click color change*/
+.meal-body .fav-btn.active{
+    color:rebeccapurple;
+}
+
